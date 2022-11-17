@@ -64,47 +64,5 @@ namespace CCESymp.UI.PageObjects
             ClickSignInButton();            
         }
 
-
-        /// <summary>
-        /// Checks if the warning for an invalid login attempt on the login screen is displayed
-        /// </summary>
-        public bool IsInvalidLoginMessageDisplayed() => Utilities.IsElementDisplayed(SearchType.ByXpath, Selectors.InvalidLoginWarningXpath, 30, "Invalid Login Message");
-
-       
-
-        /// <summary>
-        /// Generates a concurrent session per user message by opening multiple 
-        /// CCE Symphony browser tabs
-        /// </summary>
-        public void GenerateConcurrentSessionPerUserMessage()
-        {
-            Logger.Info("Generating a minimum of three active user sessions from UI");            
-            for (int i = 0; i < 3; i++)
-            {
-                DataRepository.WaitForDataLoad(4000);
-                MenuSection.Section.OpenCustomerPageInNewTab();
-                Logger.Info("Generated Session N° " + (i + 1));
-            }
-        }
-
-        public void DeleteUserSession(string username)
-        {
-            DataRepository.DeleteSessionIdByUserID(username);
-
-        }
-
-        public void KillBrowserinstances(string browsertype)
-        {
-            if (browsertype.Equals("Chrome"))
-            {
-                CommonUtilities.KillActiveChromeTasks();
-
-            }
-            else if (browsertype.Equals("Edge"))
-            {
-                CommonUtilities.KillActiveEdgeTasks();
-            }
-        }
-
     }
 }
