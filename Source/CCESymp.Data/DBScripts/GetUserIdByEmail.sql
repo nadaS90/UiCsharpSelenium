@@ -1,0 +1,1 @@
+﻿SELECT [ID] FROM [Symphony].[CCEUser] WHERE [Email] = @UserEmail

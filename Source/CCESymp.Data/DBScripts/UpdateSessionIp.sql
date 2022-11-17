@@ -1,0 +1,1 @@
+﻿UPDATE [Symphony].UserSession SET IPAddress = @NewIpAddress WHERE IPAddress = @CurrentIpAddress

@@ -1,0 +1,1 @@
+﻿DELETE FROM [Symphony].[GlobalConnection] WHERE CustomerId = @customerID

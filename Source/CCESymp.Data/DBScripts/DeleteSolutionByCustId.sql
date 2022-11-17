@@ -1,0 +1,1 @@
+﻿DELETE FROM [Symphony].[Solution] WHERE CustomerId = @CustomerID

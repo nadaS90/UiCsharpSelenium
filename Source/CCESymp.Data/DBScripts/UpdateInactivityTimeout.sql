@@ -1,0 +1,1 @@
+﻿UPDATE [Core].[SystemSetting] SET InactivityTimeoutMinutes = @TimeoutValue

@@ -1,0 +1,1 @@
+﻿SELECT * FROM [Symphony].[Customer] ORDER BY [ID] DESC

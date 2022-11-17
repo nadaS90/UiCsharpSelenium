@@ -1,0 +1,2139 @@
+<?xml version="1.0"?>
+<HL7Templates>
+    <ADTMappingTemplate>
+        <VersionNumber>
+            <Segments>MSH-8</Segments>
+            <HardValue />
+            <Delimiter />
+        </VersionNumber>
+        <SiteCode>
+            <Segments>MSH-6</Segments>
+            <HardValue />
+            <Delimiter />
+        </SiteCode>
+        <DeleteAll>
+            <Segments />
+            <HardValue>0</HardValue>
+            <Delimiter />
+        </DeleteAll>
+        <AddDelete>
+            <Segments>EVN-1</Segments>
+            <HardValue />
+            <Delimiter />
+        </AddDelete>
+        <PatientID>
+            <Segments>PID-3</Segments>
+            <HardValue />
+            <Delimiter />
+        </PatientID>
+        <Client_AlternateID>
+            <Segments>PID-18</Segments>
+            <HardValue />
+            <Delimiter />
+        </Client_AlternateID>
+        <Patient>
+            <Segments>PID-5:1,2</Segments>
+            <HardValue />
+            <Delimiter>Comma</Delimiter>
+        </Patient>
+        <ClientFirstName>
+            <Segments>PID-5:2</Segments>
+            <HardValue />
+            <Delimiter />
+        </ClientFirstName>
+        <ClientLastName>
+            <Segments>PID-5:1</Segments>
+            <HardValue />
+            <Delimiter />
+        </ClientLastName>
+        <DOB>
+            <Segments>PID-7</Segments>
+            <HardValue />
+            <Delimiter />
+        </DOB>
+        <Permanent>
+            <Segments />
+            <HardValue>1</HardValue>
+            <Delimiter />
+        </Permanent>
+        <Caution>
+            <Segments />
+            <HardValue>0</HardValue>
+            <Delimiter />
+        </Caution>
+        <Species>
+            <Segments />
+            <HardValue>Human</HardValue>
+            <Delimiter />
+        </Species>
+        <Sex>
+            <Segments>PID-8</Segments>
+            <HardValue />
+            <Delimiter />
+        </Sex>
+        <Weight>
+            <Segments>OBX-5</Segments>
+            <HardValue />
+            <Delimiter />
+        </Weight>
+        <WeightUnits>
+            <Segments>OBX-6:1</Segments>
+            <HardValue />
+            <Delimiter />
+        </WeightUnits>
+        <Height>
+            <Segments>OBX-5</Segments>
+            <HardValue />
+            <Delimiter />
+        </Height>
+        <HeightUnits>
+            <Segments>OBX-6:1</Segments>
+            <HardValue />
+            <Delimiter />
+        </HeightUnits>
+        <Location>
+            <Segments>PV1-3</Segments>
+            <HardValue />
+            <Delimiter />
+        </Location>
+        <Allergies>
+            <Segments>AL1-3:2;AL1-5</Segments>
+            <HardValue />
+            <Delimiter>Comma</Delimiter>
+        </Allergies>
+        <ClientGender>
+            <Segments>PID-8</Segments>
+            <HardValue />
+            <Delimiter />
+        </ClientGender>
+        <Breed>
+            <Segments />
+            <HardValue>N/A</HardValue>
+            <Delimiter />
+        </Breed>
+        <Address1>
+            <Segments>PID-11:1</Segments>
+            <HardValue />
+            <Delimiter />
+        </Address1>
+        <Address2>
+            <Segments>PID-11:2</Segments>
+            <HardValue />
+            <Delimiter />
+        </Address2>
+        <City>
+            <Segments>PID-11:3</Segments>
+            <HardValue />
+            <Delimiter />
+        </City>
+        <State>
+            <Segments>PID-11:4</Segments>
+            <HardValue />
+            <Delimiter />
+        </State>
+        <Zip>
+            <Segments>PID-11:5</Segments>
+            <HardValue />
+            <Delimiter />
+        </Zip>
+        <Country>
+            <Segments />
+            <HardValue>USA</HardValue>
+            <Delimiter />
+        </Country>
+        <ClientDOB>
+            <Segments>PID-7</Segments>
+            <HardValue />
+            <Delimiter />
+        </ClientDOB>
+        <DLnumber>
+            <Segments>PID-4</Segments>
+            <HardValue>N/A</HardValue>
+            <Delimiter />
+        </DLnumber>
+        <ClientPhone>
+            <Segments>PID-9</Segments>
+            <HardValue />
+            <Delimiter />
+        </ClientPhone>
+        <ClientEmail>
+            <Segments>PID-10</Segments>
+            <HardValue>N/A</HardValue>
+            <Delimiter />
+        </ClientEmail>
+    </ADTMappingTemplate>
+    <RDEMappingTemplate>
+        <VersionNumber>
+            <Segments />
+            <HardValue />
+            <Delimiter>Space</Delimiter>
+        </VersionNumber>
+        <VersionNumber>
+            <Segments>MSH-8</Segments>
+            <HardValue />
+            <Delimiter />
+        </VersionNumber>
+        <SiteCode>
+            <Segments>MSH-6</Segments>
+            <HardValue />
+            <Delimiter />
+        </SiteCode>
+        <PatientID>
+            <Segments>PID-3</Segments>
+            <HardValue />
+            <Delimiter />
+        </PatientID>
+        <NewDiscontinued>
+            <Segments>ORC-1</Segments>
+            <HardValue />
+            <Delimiter>Comma</Delimiter>
+        </NewDiscontinued>
+        <ProfileID>
+            <Segments>ORC-3</Segments>
+            <HardValue />
+            <Delimiter />
+        </ProfileID>
+        <ItemCode>
+            <Segments>RXE-2:4</Segments>
+            <HardValue />
+            <Delimiter />
+        </ItemCode>
+        <Description1>
+            <Segments>RXE-2:2</Segments>
+            <HardValue />
+            <Delimiter />
+        </Description1>
+        <Description2>
+            <Segments>RXO-1:2</Segments>
+            <HardValue />
+            <Delimiter />
+        </Description2>
+        <ProfileQTYReq>
+            <Segments>RXE-1:1</Segments>
+            <HardValue />
+            <Delimiter />
+        </ProfileQTYReq>
+        <IssueDAU>
+            <Segments>TQ1-2:2</Segments>
+            <HardValue />
+            <Delimiter />
+        </IssueDAU>
+        <Occurrences>
+            <Segments>RXE-12</Segments>
+            <HardValue>9999</HardValue>
+            <Delimiter />
+        </Occurrences>
+        <GiveStrength>
+            <Segments>RXE-3</Segments>
+            <HardValue />
+            <Delimiter />
+        </GiveStrength>
+        <GiveStrengthUnit>
+            <Segments>RXE-5:1</Segments>
+            <HardValue />
+            <Delimiter />
+        </GiveStrengthUnit>
+        <ChargeCode>
+            <Segments>RXE-2:1</Segments>
+            <HardValue />
+            <Delimiter />
+        </ChargeCode>
+        <Schedule>
+            <Segments>RXE-1:4</Segments>
+            <HardValue />
+            <Delimiter />
+        </Schedule>
+        <EndDate>
+            <Segments>RXE-1:5</Segments>
+            <HardValue />
+            <Delimiter />
+        </EndDate>
+        <BID>
+            <Segments />
+            <HardValue />
+            <Delimiter />
+        </BID>
+        <DCDate>
+            <Segments />
+            <HardValue />
+            <Delimiter />
+        </DCDate>
+        <TotalQuantity>
+            <Segments>RXE-10</Segments>
+            <HardValue />
+            <Delimiter />
+        </TotalQuantity>
+        <TotalQuantityFilledPrior>
+            <Segments />
+            <HardValue />
+            <Delimiter />
+        </TotalQuantityFilledPrior>
+        <Instructions Type="Ordering Provider">
+            <Segments>ORC-12:2;ORC-12:6</Segments>
+            <HardValue />
+            <Delimiter />
+        </Instructions>
+        <Instructions Type="Repeat Pattern">
+            <Segments />
+            <HardValue />
+            <Delimiter />
+        </Instructions>
+        <Instructions Type="Service Duration">
+            <Segments />
+            <HardValue />
+            <Delimiter />
+        </Instructions>
+        <Instructions Type="End Date/Time">
+            <Segments />
+            <HardValue />
+            <Delimiter />
+        </Instructions>
+        <Instructions Type="Priority">
+            <Segments />
+            <HardValue />
+            <Delimiter />
+        </Instructions>
+        <Instructions Type="Condition Text">
+            <Segments />
+            <HardValue />
+            <Delimiter />
+        </Instructions>
+        <Instructions Type="Conjunction">
+            <Segments />
+            <HardValue />
+            <Delimiter />
+        </Instructions>
+        <Instructions Type="Occurrence Duration">
+            <Segments />
+            <HardValue />
+            <Delimiter />
+        </Instructions>
+        <Instructions Type="Pharmacy Treatment Instructions">
+            <Segments />
+            <HardValue />
+            <Delimiter />
+        </Instructions>
+        <Instructions Type="Substitution Status">
+            <Segments />
+            <HardValue />
+            <Delimiter />
+        </Instructions>
+        <Instructions Type="Indication">
+            <Segments>RXO-20</Segments>
+            <HardValue />
+            <Delimiter />
+        </Instructions>
+        <Instructions Type="Total Daily Dose">
+            <Segments />
+            <HardValue />
+            <Delimiter />
+        </Instructions>
+        <Instructions Type="Dispensing Interval">
+            <Segments />
+            <HardValue />
+            <Delimiter />
+        </Instructions>
+        <Instructions Type="Give Dosage Form">
+            <Segments>RXE-6</Segments>
+            <HardValue />
+            <Delimiter />
+        </Instructions>
+        <Instructions Type="Administration Instructions">
+            <Segments>RXE-7</Segments>
+            <HardValue />
+            <Delimiter />
+        </Instructions>
+        <Instructions Type="Deliver To Location">
+            <Segments />
+            <HardValue />
+            <Delimiter />
+        </Instructions>
+        <Instructions Type="Needs Human Review">
+            <Segments />
+            <HardValue />
+            <Delimiter />
+        </Instructions>
+        <Instructions Type="Supplier's Special Instructions">
+            <Segments />
+            <HardValue />
+            <Delimiter />
+        </Instructions>
+        <Instructions Type="Give Per (Time Unit)">
+            <Segments />
+            <HardValue />
+            <Delimiter />
+        </Instructions>
+        <Instructions Type="Give Rate Amount">
+            <Segments />
+            <HardValue />
+            <Delimiter />
+        </Instructions>
+        <Instructions Type="Give Rate Units">
+            <Segments />
+            <HardValue />
+            <Delimiter />
+        </Instructions>
+        <Instructions Type="Give Drug Strength Volume">
+            <Segments />
+            <HardValue />
+            <Delimiter />
+        </Instructions>
+        <Instructions Type="Give Strength Volume Units">
+            <Segments />
+            <HardValue />
+            <Delimiter />
+        </Instructions>
+        <Instructions Type="Controlled Substance Schedule">
+            <Segments>RXE-35</Segments>
+            <HardValue />
+            <Delimiter />
+        </Instructions>
+        <Instructions Type="Pharmaceutical Substance Alternative">
+            <Segments />
+            <HardValue />
+            <Delimiter />
+        </Instructions>
+        <Instructions Type="Deliver To Patient Location">
+            <Segments />
+            <HardValue />
+            <Delimiter />
+        </Instructions>
+        <Instructions Type="Deliver To Address">
+            <Segments />
+            <HardValue />
+            <Delimiter />
+        </Instructions>
+        <Instructions Type="Pharmacy Order Type">
+            <Segments />
+            <HardValue />
+            <Delimiter />
+        </Instructions>
+        <Instructions Type="Route">
+            <Segments>RXR-1</Segments>
+            <HardValue />
+            <Delimiter />
+        </Instructions>
+        <Instructions Type="Size">
+            <Segments />
+            <HardValue />
+            <Delimiter />
+        </Instructions>
+        <Instructions Type="Device">
+            <Segments />
+            <HardValue />
+            <Delimiter />
+        </Instructions>
+        <Instructions Type="Administration Method">
+            <Segments />
+            <HardValue />
+            <Delimiter />
+        </Instructions>
+        <Instructions Type="Route Instructions">
+            <Segments />
+            <HardValue />
+            <Delimiter />
+        </Instructions>
+        <Instructions Type="Rx Component Type">
+            <Segments />
+            <HardValue />
+            <Delimiter />
+        </Instructions>
+        <Instructions Type="Component Code^Component Descriptor">
+            <Segments />
+            <HardValue />
+            <Delimiter />
+        </Instructions>
+        <Instructions Type="Component Amount">
+            <Segments />
+            <HardValue />
+            <Delimiter />
+        </Instructions>
+        <Instructions Type="Component Units">
+            <Segments />
+            <HardValue />
+            <Delimiter />
+        </Instructions>
+        <Instructions Type="Component Strength">
+            <Segments />
+            <HardValue />
+            <Delimiter />
+        </Instructions>
+        <Instructions Type="Component Strength Units">
+            <Segments />
+            <HardValue />
+            <Delimiter />
+        </Instructions>
+        <Instructions Type="Supplementary Code">
+            <Segments />
+            <HardValue />
+            <Delimiter />
+        </Instructions>
+        <Instructions Type="Component Drug Strength Volume">
+            <Segments />
+            <HardValue />
+            <Delimiter />
+        </Instructions>
+        <Instructions Type="Component Drug Strength Volume Units">
+            <Segments />
+            <HardValue />
+            <Delimiter />
+        </Instructions>
+        <Instructions Type="Giv Sub-ID Counter">
+            <Segments />
+            <HardValue />
+            <Delimiter />
+        </Instructions>
+        <Instructions Type="Dispense Sub ID Counter">
+            <Segments />
+            <HardValue />
+            <Delimiter />
+        </Instructions>
+        <Instructions Type="Quantity/Timing">
+            <Segments />
+            <HardValue />
+            <Delimiter />
+        </Instructions>
+        <Instructions Type="Give Code">
+            <Segments />
+            <HardValue />
+            <Delimiter />
+        </Instructions>
+        <TotalQuantityFilled>
+            <Segments>RXE-10</Segments>
+            <HardValue />
+            <Delimiter />
+        </TotalQuantityFilled>
+        <NDC>
+            <Segments />
+            <HardValue />
+            <Delimiter />
+        </NDC>
+    </RDEMappingTemplate>
+    <RDSMappingTemplate>
+        <VersionNumber>
+            <Segments>MSH-8</Segments>
+            <HardValue />
+            <Delimiter />
+        </VersionNumber>
+        <SiteCode>
+            <Segments>MSH-6</Segments>
+            <HardValue />
+            <Delimiter />
+        </SiteCode>
+        <PatientID>
+            <Segments>PID-3</Segments>
+            <HardValue />
+            <Delimiter />
+        </PatientID>
+        <NewDiscontinued>
+            <Segments>ORC-1</Segments>
+            <HardValue />
+            <Delimiter />
+        </NewDiscontinued>
+        <ProfileID>
+            <Segments>ORC-3</Segments>
+            <HardValue />
+            <Delimiter />
+        </ProfileID>
+        <ItemCode>
+            <Segments>RXE-2:3</Segments>
+            <HardValue />
+            <Delimiter />
+        </ItemCode>
+        <Description1>
+            <Segments>RXO-1:2</Segments>
+            <HardValue />
+            <Delimiter />
+        </Description1>
+        <Description2>
+            <Segments>RXE-2:2</Segments>
+            <HardValue />
+            <Delimiter />
+        </Description2>
+        <ProfileQTYReq>
+            <Segments>RXE-10</Segments>
+            <HardValue />
+            <Delimiter />
+        </ProfileQTYReq>
+        <IssueDAU>
+            <Segments />
+            <HardValue />
+            <Delimiter />
+        </IssueDAU>
+        <Occurrences>
+            <Segments>RXE-12</Segments>
+            <HardValue>9999</HardValue>
+            <Delimiter />
+        </Occurrences>
+        <GiveStrength>
+            <Segments>RXE-25</Segments>
+            <HardValue />
+            <Delimiter />
+        </GiveStrength>
+        <GiveStrengthUnit>
+            <Segments>RXE-26</Segments>
+            <HardValue />
+            <Delimiter />
+        </GiveStrengthUnit>
+        <ChargeCode>
+            <Segments>RXE-15</Segments>
+            <HardValue />
+            <Delimiter />
+        </ChargeCode>
+        <Schedule>
+            <Segments />
+            <HardValue />
+            <Delimiter />
+        </Schedule>
+        <EndDate>
+            <Segments>RXE-3:1</Segments>
+            <HardValue />
+            <Delimiter />
+        </EndDate>
+        <BID>
+            <Segments />
+            <HardValue />
+            <Delimiter />
+        </BID>
+        <DCDate>
+            <Segments />
+            <HardValue />
+            <Delimiter />
+        </DCDate>
+        <Instructions Type="Ordering Provider">
+            <Segments>ORC-12:2;ORC-12:3</Segments>
+            <HardValue />
+            <Delimiter>Space</Delimiter>
+        </Instructions>
+        <Instructions Type="Repeat Pattern">
+            <Segments />
+            <HardValue />
+            <Delimiter />
+        </Instructions>
+        <Instructions Type="Service Duration">
+            <Segments />
+            <HardValue />
+            <Delimiter />
+        </Instructions>
+        <Instructions Type="End Date/Time">
+            <Segments />
+            <HardValue />
+            <Delimiter />
+        </Instructions>
+        <Instructions Type="Priority">
+            <Segments />
+            <HardValue />
+            <Delimiter />
+        </Instructions>
+        <Instructions Type="Condition Text">
+            <Segments />
+            <HardValue />
+            <Delimiter />
+        </Instructions>
+        <Instructions Type="Conjunction">
+            <Segments />
+            <HardValue />
+            <Delimiter />
+        </Instructions>
+        <Instructions Type="Occurrence Duration">
+            <Segments />
+            <HardValue />
+            <Delimiter />
+        </Instructions>
+        <Instructions Type="Pharmacy Treatment Instructions">
+            <Segments />
+            <HardValue />
+            <Delimiter />
+        </Instructions>
+        <Instructions Type="Substitution Status">
+            <Segments />
+            <HardValue />
+            <Delimiter />
+        </Instructions>
+        <Instructions Type="Indication">
+            <Segments>RXO-20</Segments>
+            <HardValue />
+            <Delimiter />
+        </Instructions>
+        <Instructions Type="Total Daily Dose">
+            <Segments />
+            <HardValue />
+            <Delimiter />
+        </Instructions>
+        <Instructions Type="Dispensing Interval">
+            <Segments />
+            <HardValue />
+            <Delimiter />
+        </Instructions>
+        <Instructions Type="Give Dosage Form">
+            <Segments>RXE-6</Segments>
+            <HardValue />
+            <Delimiter />
+        </Instructions>
+        <Instructions Type="Administration Instructions">
+            <Segments>RXE-7</Segments>
+            <HardValue />
+            <Delimiter />
+        </Instructions>
+        <Instructions Type="Deliver To Location">
+            <Segments />
+            <HardValue />
+            <Delimiter />
+        </Instructions>
+        <Instructions Type="Needs Human Review">
+            <Segments />
+            <HardValue />
+            <Delimiter />
+        </Instructions>
+        <Instructions Type="Supplier's Special Instructions">
+            <Segments />
+            <HardValue />
+            <Delimiter />
+        </Instructions>
+        <Instructions Type="Give Per (Time Unit)">
+            <Segments />
+            <HardValue />
+            <Delimiter />
+        </Instructions>
+        <Instructions Type="Give Rate Amount">
+            <Segments />
+            <HardValue />
+            <Delimiter />
+        </Instructions>
+        <Instructions Type="Give Rate Units">
+            <Segments />
+            <HardValue />
+            <Delimiter />
+        </Instructions>
+        <Instructions Type="Give Drug Strength Volume">
+            <Segments />
+            <HardValue />
+            <Delimiter />
+        </Instructions>
+        <Instructions Type="Give Strength Volume Units">
+            <Segments />
+            <HardValue />
+            <Delimiter />
+        </Instructions>
+        <Instructions Type="Controlled Substance Schedule">
+            <Segments>RXE-35</Segments>
+            <HardValue />
+            <Delimiter />
+        </Instructions>
+        <Instructions Type="Pharmaceutical Substance Alternative">
+            <Segments />
+            <HardValue />
+            <Delimiter />
+        </Instructions>
+        <Instructions Type="Deliver To Patient Location">
+            <Segments />
+            <HardValue />
+            <Delimiter />
+        </Instructions>
+        <Instructions Type="Deliver To Address">
+            <Segments />
+            <HardValue />
+            <Delimiter />
+        </Instructions>
+        <Instructions Type="Pharmacy Order Type">
+            <Segments>RXE-44</Segments>
+            <HardValue />
+            <Delimiter />
+        </Instructions>
+        <Instructions Type="Route">
+            <Segments>RXR-1</Segments>
+            <HardValue />
+            <Delimiter />
+        </Instructions>
+        <Instructions Type="Size">
+            <Segments />
+            <HardValue />
+            <Delimiter />
+        </Instructions>
+        <Instructions Type="Device">
+            <Segments />
+            <HardValue />
+            <Delimiter />
+        </Instructions>
+        <Instructions Type="Administration Method">
+            <Segments />
+            <HardValue />
+            <Delimiter />
+        </Instructions>
+        <Instructions Type="Route Instructions">
+            <Segments />
+            <HardValue />
+            <Delimiter />
+        </Instructions>
+        <Instructions Type="Rx Component Type">
+            <Segments />
+            <HardValue />
+            <Delimiter />
+        </Instructions>
+        <Instructions Type="Component Code^Component Descriptor">
+            <Segments />
+            <HardValue />
+            <Delimiter />
+        </Instructions>
+        <Instructions Type="Component Amount">
+            <Segments />
+            <HardValue />
+            <Delimiter />
+        </Instructions>
+        <Instructions Type="Component Units">
+            <Segments />
+            <HardValue />
+            <Delimiter />
+        </Instructions>
+        <Instructions Type="Component Strength">
+            <Segments />
+            <HardValue />
+            <Delimiter />
+        </Instructions>
+        <Instructions Type="Component Strength Units">
+            <Segments />
+            <HardValue />
+            <Delimiter />
+        </Instructions>
+        <Instructions Type="Supplementary Code">
+            <Segments />
+            <HardValue />
+            <Delimiter />
+        </Instructions>
+        <Instructions Type="Component Drug Strength Volume">
+            <Segments />
+            <HardValue />
+            <Delimiter />
+        </Instructions>
+        <Instructions Type="Component Drug Strength Volume Units">
+            <Segments />
+            <HardValue />
+            <Delimiter />
+        </Instructions>
+        <Instructions Type="Giv Sub-ID Counter">
+            <Segments />
+            <HardValue />
+            <Delimiter />
+        </Instructions>
+        <Instructions Type="Dispense Sub ID Counter">
+            <Segments />
+            <HardValue />
+            <Delimiter />
+        </Instructions>
+        <Instructions Type="Quantity/Timing">
+            <Segments />
+            <HardValue />
+            <Delimiter />
+        </Instructions>
+        <Instructions Type="Give Code">
+            <Segments />
+            <HardValue />
+            <Delimiter />
+        </Instructions>
+        <TotalQuantityFilled>
+            <Segments>RXE-10</Segments>
+            <HardValue />
+            <Delimiter />
+        </TotalQuantityFilled>
+    </RDSMappingTemplate>
+    <MFNMappingTemplate>
+        <SiteCode>
+            <Segments>MSH-6</Segments>
+            <HardValue>320</HardValue>
+            <Delimiter />
+        </SiteCode>
+        <JCode>
+            <Segments>ZFM-2</Segments>
+            <HardValue />
+            <Delimiter />
+        </JCode>
+        <Description1>
+            <Segments>ZFM-3</Segments>
+            <HardValue />
+            <Delimiter />
+        </Description1>
+        <ItemCode>
+            <Segments>ZFM-5</Segments>
+            <HardValue />
+            <Delimiter />
+        </ItemCode>
+        <Description2>
+            <Segments>ZFM-7</Segments>
+            <HardValue />
+            <Delimiter />
+        </Description2>
+        <UOM>
+            <Segments>ZFM-8</Segments>
+            <HardValue />
+            <Delimiter />
+        </UOM>
+        <UnitPrice>
+            <Segments>ZFM-22</Segments>
+            <HardValue />
+            <Delimiter />
+        </UnitPrice>
+        <NDC>
+            <Segments>ZFM-24</Segments>
+            <HardValue />
+            <Delimiter />
+        </NDC>
+        <Strength>
+            <Segments>ZFM-34</Segments>
+	    <HardValue />
+	    <Delimiter />
+        </Strength>
+        <FormularyUpdate>
+            <Segments>MFE-1</Segments>
+            <HardValue />
+            <Delimiter />
+        </FormularyUpdate>
+        <Supplier>
+            <Segments />
+            <HardValue>Pharmacy</HardValue>
+            <Delimiter />
+        </Supplier>
+        <DrugSchedule>
+            <Segments>ZFM-4</Segments>
+            <HardValue />
+            <Delimiter />
+        </DrugSchedule>
+    </MFNMappingTemplate>
+    <BillingMapping>
+        <Item>
+            <Segment>MSH-3</Segment>
+            <XmlTree />
+            <HardValue>CUBEX</HardValue>
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>MSH-4</Segment>
+            <XmlTree />
+            <HardValue>373</HardValue>
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>MSH-5</Segment>
+            <XmlTree />
+            <HardValue>RxConnect</HardValue>
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>MSH-6</Segment>
+            <XmlTree>&lt;Identifier&gt;</XmlTree>
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>MSH-7</Segment>
+            <XmlTree>transaction/transactionDate;transaction/transactionTime</XmlTree>
+            <HardValue />
+            <Delimiter>Space</Delimiter>
+            <Format>DateTime</Format>
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>MSH-8</Segment>
+            <XmlTree />
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>MSH-9</Segment>
+            <XmlTree />
+            <HardValue>DFT^P03</HardValue>
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>MSH-10</Segment>
+            <XmlTree>transaction/transactionDate;transaction/transactionTime</XmlTree>
+            <HardValue />
+            <Delimiter>Space</Delimiter>
+            <Format>DateTime</Format>
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>MSH-11</Segment>
+            <XmlTree />
+            <HardValue>P</HardValue>
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>MSH-12</Segment>
+            <XmlTree />
+            <HardValue>2.3</HardValue>
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>MSH-13</Segment>
+            <XmlTree />
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>MSH-14</Segment>
+            <XmlTree />
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>MSH-15</Segment>
+            <XmlTree />
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>MSH-16</Segment>
+            <XmlTree />
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>MSH-17</Segment>
+            <XmlTree />
+            <HardValue>USA</HardValue>
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>MSH-18</Segment>
+            <XmlTree />
+            <HardValue>ASCII</HardValue>
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>EVN-1</Segment>
+            <XmlTree />
+            <HardValue>P03</HardValue>
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>EVN-2</Segment>
+            <XmlTree />
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>EVN-3</Segment>
+            <XmlTree />
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>PID-1</Segment>
+            <XmlTree />
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>PID-2</Segment>
+            <XmlTree />
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>PID-3</Segment>
+            <XmlTree>patient/PatientId</XmlTree>
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>PID-4</Segment>
+            <XmlTree />
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>PID-5</Segment>
+            <XmlTree>patient/PatientName</XmlTree>
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>PID-6</Segment>
+            <XmlTree />
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>PID-7</Segment>
+            <XmlTree />
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>PID-8</Segment>
+            <XmlTree />
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>PID-9</Segment>
+            <XmlTree />
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>PID-10</Segment>
+            <XmlTree />
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>PID-11</Segment>
+            <XmlTree />
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>PID-12</Segment>
+            <XmlTree />
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>PID-13</Segment>
+            <XmlTree />
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>PID-14</Segment>
+            <XmlTree />
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>PID-15</Segment>
+            <XmlTree />
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>PID-16</Segment>
+            <XmlTree />
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>PID-17</Segment>
+            <XmlTree />
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>PID-18</Segment>
+            <XmlTree>patient/ClientId</XmlTree>
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>PID-19</Segment>
+            <XmlTree />
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>PID-20</Segment>
+            <XmlTree />
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>PID-21</Segment>
+            <XmlTree />
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>PID-22</Segment>
+            <XmlTree />
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>PID-23</Segment>
+            <XmlTree />
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>FT1-1</Segment>
+            <XmlTree />
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>FT1-2</Segment>
+            <XmlTree>transaction/transactionId</XmlTree>
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>FT1-3</Segment>
+            <XmlTree>transaction/sequenceId</XmlTree>
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>FT1-4</Segment>
+            <XmlTree>transaction/transactionDate;transaction/transactionTime</XmlTree>
+            <HardValue />
+            <Delimiter>Space</Delimiter>
+            <Format>DateTime</Format>
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>FT1-5</Segment>
+            <XmlTree>transaction/transactionDate;transaction/transactionTime</XmlTree>
+            <HardValue />
+            <Delimiter>Space</Delimiter>
+            <Format>DateTime</Format>
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>FT1-6</Segment>
+            <XmlTree />
+            <HardValue>CG</HardValue>
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>FT1-7</Segment>
+            <XmlTree>transaction/ItemId</XmlTree>
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>FT1-8</Segment>
+            <XmlTree>transaction/ItemName</XmlTree>
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>FT1-9</Segment>
+            <XmlTree />
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>FT1-10</Segment>
+            <XmlTree>transaction/BillingQuantity</XmlTree>
+            <HardValue />
+            <Delimiter />
+            <Format>Absolute</Format>
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>FT1-11</Segment>
+            <XmlTree />
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>FT1-12</Segment>
+            <XmlTree />
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>FT1-13</Segment>
+            <XmlTree>department/Id</XmlTree>
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>FT1-14</Segment>
+            <XmlTree />
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>FT1-15</Segment>
+            <XmlTree />
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>FT1-16</Segment>
+            <XmlTree />
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>FT1-17</Segment>
+            <XmlTree />
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>FT1-18</Segment>
+            <XmlTree />
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>FT1-19</Segment>
+            <XmlTree />
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>FT1-20</Segment>
+            <XmlTree>transaction/UserID;transaction/UserLName;transaction/UserFName</XmlTree>
+            <HardValue />
+            <Delimiter>Carrot</Delimiter>
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>FT1-21</Segment>
+            <XmlTree />
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>FT1-22</Segment>
+            <XmlTree />
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>FT1-23</Segment>
+            <XmlTree>transaction/ProfileID</XmlTree>
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>FT1-24</Segment>
+            <XmlTree />
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>FT1-25</Segment>
+            <XmlTree />
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>FT1-26</Segment>
+            <XmlTree />
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>FT1-27</Segment>
+            <XmlTree />
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>FT1-28</Segment>
+            <XmlTree />
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>FT1-29</Segment>
+            <XmlTree />
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>True</Hybrid>
+        </Item>
+        <Item>
+            <Segment>FT1-30</Segment>
+            <XmlTree />
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>FT1-31</Segment>
+            <XmlTree />
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>FT1-32</Segment>
+            <XmlTree />
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+    </BillingMapping>
+ <CustomBillingMapping>
+        <Item>
+            <Segment>ZPM-1</Segment>
+            <XmlTree />
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>ZPM-2</Segment>
+            <XmlTree>&lt;Identifier&gt;</XmlTree>
+            <HardValue>{1}CABINET</HardValue>
+            <Delimiter />
+            <Format />
+            <Hybrid>True</Hybrid>
+        </Item>
+        <Item>
+            <Segment>ZPM-3</Segment>
+            <XmlTree />
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>ZPM-4</Segment>
+            <XmlTree>transaction/ItemId</XmlTree>
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>ZPM-5</Segment>
+            <XmlTree>transaction/ItemId</XmlTree>
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>ZPM-6</Segment>
+            <XmlTree>transaction/BillingQuantity</XmlTree>
+            <HardValue />
+            <Delimiter />
+            <Format>ReverseSign</Format>
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>ZPM-7</Segment>
+            <XmlTree />
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>ZPM-8</Segment>
+            <XmlTree>transaction/UserId</XmlTree>
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>ZPM-9</Segment>
+<XmlTree>transaction/UserFName;transaction/UserLName</XmlTree>
+            <HardValue />
+            <Delimiter>Space</Delimiter>
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+    </CustomBillingMapping>
+    <ZMAMapping>
+        <Item>
+            <Segment>MSH-3</Segment>
+            <XmlTree />
+            <HardValue>CUBEX</HardValue>
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>MSH-4</Segment>
+            <XmlTree>&lt;Identifier&gt;</XmlTree>
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>MSH-5</Segment>
+            <XmlTree />
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>MSH-6</Segment>
+            <XmlTree>&lt;Identifier&gt;</XmlTree>
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>MSH-7</Segment>       <XmlTree>transaction/transactionDate;transaction/transactionTime</XmlTree>
+    <HardValue />
+            <Delimiter>Space</Delimiter>
+            <Format>DateTime</Format>
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>MSH-8</Segment>
+            <XmlTree />
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>MSH-9</Segment>
+            <XmlTree />
+            <HardValue>ZMA</HardValue>
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>MSH-10</Segment>
+            <XmlTree>TransactionId</XmlTree>
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>MSH-11</Segment>
+            <XmlTree />
+            <HardValue>P</HardValue>
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>MSH-12</Segment>
+            <XmlTree />
+            <HardValue>2.5</HardValue>
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>MSH-13</Segment>
+            <XmlTree />
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>MSH-14</Segment>
+            <XmlTree />
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>MSH-15</Segment>
+            <XmlTree />
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>MSH-16</Segment>
+            <XmlTree />
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>MSH-17</Segment>
+            <XmlTree />
+            <HardValue>USA</HardValue>
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>MSH-18</Segment>
+            <XmlTree />
+            <HardValue>ASCII</HardValue>
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>MSH-19</Segment>
+            <XmlTree />
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>MSH-20</Segment>
+            <XmlTree />
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>MSH-21</Segment>
+            <XmlTree />
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+    </ZMAMapping>
+    <CustomZMAMapping>
+        <Item>
+            <Segment>ZMA-1</Segment>
+            <XmlTree>Type</XmlTree>
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>ZMA-2</Segment>
+            <XmlTree>&lt;Identifier&gt;</XmlTree>
+            <HardValue>{1}CABINET</HardValue>
+            <Delimiter />
+            <Format />
+            <Hybrid>True</Hybrid>
+        </Item>
+        <Item>
+            <Segment>ZMA-3</Segment>
+            <XmlTree>ComputerName</XmlTree>
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>ZMA-4</Segment>
+            <XmlTree>NDC</XmlTree>
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>ZMA-5</Segment>
+            <XmlTree>ItemId</XmlTree>
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>ZMA-6</Segment>
+            <XmlTree>BurnQty</XmlTree>
+            <HardValue />
+            <Delimiter />
+            <Format>Absolute</Format>
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>ZMA-7</Segment>
+            <XmlTree>CurrentOnHand</XmlTree>
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>ZMA-8</Segment>
+            <XmlTree>UserId</XmlTree>
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>ZMA-9</Segment>
+            <XmlTree>UserFName;UserLName</XmlTree>
+            <HardValue />
+            <Delimiter>Space</Delimiter>
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+    </CustomZMAMapping>
+    <ZPMMapping>
+        <Item>
+            <Segment>MSH-3</Segment>
+            <XmlTree />
+            <HardValue>CUBEX</HardValue>
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>MSH-4</Segment>
+            <XmlTree />
+            <HardValue>373</HardValue>
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>MSH-5</Segment>
+            <XmlTree />
+            <HardValue>RxConnect</HardValue>
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>MSH-6</Segment>
+           <XmlTree />
+            <HardValue>373</HardValue>
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>MSH-7</Segment>
+            <XmlTree>TransactionDate;TransactionTime</XmlTree>
+            <HardValue />
+            <Delimiter>Space</Delimiter>
+            <Format>DateTime</Format>
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>MSH-8</Segment>
+            <XmlTree />
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>MSH-9</Segment>
+            <XmlTree />
+            <HardValue>ZPM</HardValue>
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>MSH-10</Segment>
+            <XmlTree>TransactionId</XmlTree>
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>MSH-11</Segment>
+            <XmlTree />
+            <HardValue>P</HardValue>
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>MSH-12</Segment>
+            <XmlTree />
+            <HardValue>2.3</HardValue>
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>MSH-13</Segment>
+            <XmlTree />
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>MSH-14</Segment>
+            <XmlTree />
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>MSH-15</Segment>
+            <XmlTree />
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>MSH-16</Segment>
+            <XmlTree />
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>MSH-17</Segment>
+            <XmlTree />
+            <HardValue>USA</HardValue>
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>MSH-18</Segment>
+            <XmlTree />
+            <HardValue>ASCII</HardValue>
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+    </ZPMMapping>
+    <CustomZPMMapping>
+        <Item>
+            <Segment>ZPM-1</Segment>
+            <XmlTree>TransactionType</XmlTree>
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>ZPM-2</Segment>
+            <XmlTree>System</XmlTree>
+            <HardValue>Medbank</HardValue>
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>ZPM-3</Segment>
+            <XmlTree>VendingStationName</XmlTree>
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>ZPM-4</Segment>
+            <XmlTree>DrawerDescription</XmlTree>
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>ZPM-5</Segment>
+            <XmlTree>PocketDescription</XmlTree>
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>ZPM-6</Segment>
+            <XmlTree>ItemID</XmlTree>
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>ZPM-7</Segment>
+            <XmlTree>ItemName</XmlTree>
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>ZPM-8</Segment>
+            <XmlTree>ItemClass</XmlTree>
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>ZPM-9</Segment>
+            <XmlTree>CompartmentExpectedCount</XmlTree>
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>ZPM-10</Segment>
+            <XmlTree>CompartmentActualCount</XmlTree>
+            <HardValue />
+            <Delimiter />
+            <Format>Absolute</Format>
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>ZPM-11</Segment>
+            <XmlTree>TransactionAmount</XmlTree>
+            <HardValue />
+            <Delimiter />
+            <Format>Absolute</Format>
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>ZPM-12</Segment>
+            <XmlTree />
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>ZPM-13</Segment>
+            <XmlTree />
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>ZPM-14</Segment>
+            <XmlTree />
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>ZPM-15</Segment>
+            <XmlTree />
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>ZPM-16</Segment>
+            <XmlTree />
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>ZPM-17</Segment>
+            <XmlTree />
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>ZPM-18</Segment>
+            <XmlTree />
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>ZPM-19</Segment>
+            <XmlTree />
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>ZPM-20</Segment>
+            <XmlTree>NursingUnit</XmlTree>
+            <HardValue />
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+        <Item>
+            <Segment>ZPM-21</Segment>
+            <XmlTree>SubDrawer</XmlTree>
+            <HardValue>0</HardValue>
+            <Delimiter />
+            <Format />
+            <Hybrid>False</Hybrid>
+        </Item>
+    </CustomZPMMapping>
+    <RoutingTemplate>
+        <Item>
+            <Identifyer>320</Identifyer>
+            <DatabaseName>som_hawthorn</DatabaseName>
+            <DatabaseLogin>som-hawthorn</DatabaseLogin>
+            <DatabasePassword>*****</DatabasePassword>
+            <SendToIp>10.130.91.60</SendToIp>
+            <SendToPort>19300</SendToPort>
+            <SequenceId>0</SequenceId>
+	    <SendToPortZPM>19300</SendToPortZPM>
+        </Item>
+   	<Item>
+            <Identifyer>313</Identifyer>
+            <DatabaseName>som_cfp</DatabaseName>
+            <DatabaseLogin>som-cfp</DatabaseLogin>
+            <DatabasePassword>*****</DatabasePassword>
+            <SendToIp>10.130.91.60</SendToIp>
+            <SendToPort>19300</SendToPort>
+            <SequenceId>0</SequenceId>
+	    <SendToPortZPM>19300</SendToPortZPM>
+        </Item>
+    </RoutingTemplate>
+    <AuthenticationTemplate>
+        <Item>
+            <Identifyer>320</Identifyer>
+            <DatabaseIp>108.168.196.250\sqlexpress</DatabaseIp>
+            <DatabaseName>CubexDB</DatabaseName>
+            <DatabaseLogin>sa</DatabaseLogin>
+            <DatabasePassword>*****</DatabasePassword>
+        </Item>
+    </AuthenticationTemplate>
+    <BillingTemplate>
+        <Item>
+            <Identifyer>320</Identifyer>
+            <DatabaseIP>108.168.196.250\sqlexpress</DatabaseIP>
+            <DatabaseName>CubexDB</DatabaseName>
+            <DatabaseLogin>sa</DatabaseLogin>
+            <DatabasePassword>*****</DatabasePassword>
+            <SequenceNumber>0</SequenceNumber>
+            <SendToIp>10.114.12.110</SendToIp>
+            <SendToPort>19300</SendToPort>
+        </Item>
+    </BillingTemplate>
+</HL7Templates>
