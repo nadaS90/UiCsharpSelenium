@@ -1,4 +1,5 @@
-﻿namespace CCESymp.UI.Utilities
+﻿using OpenQA.Selenium.Interactions;
+namespace CCESymp.UI.Utilities
 {
     public class BasePage<TypeOfPage> : BaseDriver where TypeOfPage : new()
     {
@@ -28,9 +29,18 @@
         public void RefreshPage()
         {
             driver.Navigation.Refresh();
-        }  
-        
+        }
 
-        
+        /// <summary>
+        /// Hover on tabs in current page
+        /// </summary>
+        public void HoverTab(IElement mainMenu, IElement subMenu)
+        {
+            Actions actions = new Actions(driver);
+            actions.moveToElement(element).perform();
+            actions.moveToElement(subMenu).click();
+           // actions.click().build().perform();
+        }
+
     }
 }
