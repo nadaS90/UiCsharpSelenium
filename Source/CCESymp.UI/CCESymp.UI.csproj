@@ -139,6 +139,7 @@
     <Compile Include="PageObjects\CustomerPage.cs" />
     <Compile Include="PageObjects\CustomerPageElements.cs" />
     <Compile Include="PageObjects\CustomerPageSelectors.cs" />
+    <Compile Include="PageObjects\HomePage.cs" />
     <Compile Include="PageObjects\HomePageElements.cs" />
     <Compile Include="PageObjects\HomePageSelectors.cs" />
     <Compile Include="PageObjects\LoginPage.cs" />
@@ -148,7 +149,6 @@
     <Compile Include="PageObjects\MenuSectionPageElements.cs" />
     <Compile Include="PageObjects\MenuSectionSelectors.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Utilities\Actions.cs" />
     <Compile Include="Utilities\HL7Sender.cs" />
     <Compile Include="Utilities\BasePage.cs" />
     <Compile Include="Utilities\BaseTest.cs" />
