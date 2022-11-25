@@ -25,10 +25,10 @@ namespace CCESymp.UI.PageObjects.ServicesMenu.WebAppDev
         /// <summary>
         /// click on Full Stack .Net tab that is displayed on Web Application Development page
         /// </summary>
-        public void ClickOnFullStackDotNet()
+        public void ClickOnFullStackDotNetTab()
         {
             Logger.Info("Click on Full Stack .Net");
-            driver.Wait.UntilElementIsVisible(SearchType.ByXpath, CommonPage.CommonSelectors.PageTitleHeaderXpath(Constants.WebAppDevPageTitle), 30);
+            driver.Wait.UntilElementIsVisible(SearchType.ByXpath, CommonPage.CommonSelectors.SubTitleTabsXpath(Constants.FullStackDotNet), 30);
             FullStackDotNet.Click();
         }
 
@@ -38,17 +38,17 @@ namespace CCESymp.UI.PageObjects.ServicesMenu.WebAppDev
         public bool IsFullStackDotNetSubTitleDisplayed()
         {
             Logger.Info("Check if Full Stack .Net sub title is displayed");
-            driver.Wait.UntilElementIsVisible(SearchType.ByXpath, CommonPage.CommonSelectors.SubTitleHeaderXpath, 30);
-            return driver.Element.GetElement(SearchType.ByXpath, CommonPage.CommonSelectors.SubTitleHeaderXpath).Displayed;
+            driver.Wait.UntilElementIsVisible(SearchType.ByXpath, CommonPage.CommonSelectors.SubTitleHeaderXpath(Constants.FullStackDotNet), 30);
+            return driver.Element.GetElement(SearchType.ByXpath, CommonPage.CommonSelectors.SubTitleHeaderXpath(Constants.FullStackDotNet)).Displayed;
         }
 
         /// <summary>
         /// click on Full Stack Js tab that is displayed on Web Application Development page
         /// </summary>
-        public void ClickOnFullStackJS()
+        public void ClickOnFullStackJSTab()
         {
-            Logger.Info("Click on Full Stack .Net");
-            driver.Wait.UntilElementIsVisible(SearchType.ByXpath, WebAppDevPage.Selectors.FullStackTabsXpath(Constants.FullStackJS), 30);
+            Logger.Info("Click on Full Stack JS");
+            driver.Wait.UntilElementIsVisible(SearchType.ByXpath, CommonPage.CommonSelectors.SubTitleTabsXpath(Constants.FullStackJS), 30);
             FullStackJS.Click();
         }
 
@@ -57,19 +57,19 @@ namespace CCESymp.UI.PageObjects.ServicesMenu.WebAppDev
         /// </summary>
         public bool IsFullStackJSSubTitleDisplayed()
         {
-            Logger.Info("Check if Full Stack .Net sub title is displayed");
-            driver.Wait.UntilElementIsVisible(SearchType.ByXpath, CommonPage.CommonSelectors.SubTitleHeaderXpath, 30);
-            return driver.Element.GetElement(SearchType.ByXpath, CommonPage.CommonSelectors.SubTitleHeaderXpath).Displayed;
+            Logger.Info("Check if Full Stack JS sub title is displayed");
+            driver.Wait.UntilElementIsVisible(SearchType.ByXpath, CommonPage.CommonSelectors.SubTitleTabsXpath(Constants.FullStackJS), 30);
+            return driver.Element.GetElement(SearchType.ByXpath, CommonPage.CommonSelectors.SubTitleTabsXpath(Constants.FullStackJS)).Displayed;
 
         }
 
         /// <summary>
         /// click on Full Stack Java tab that is displayed on Web Application Development page
         /// </summary>
-        public void ClickOnFullStackJava()
+        public void ClickOnFullStackJavaTab()
         {
-            Logger.Info("Click on Full Stack .Net");
-            driver.Wait.UntilElementIsVisible(SearchType.ByXpath, WebAppDevPage.Selectors.FullStackTabsXpath(Constants.FullStackJava), 30);
+            Logger.Info("Click on Full Stack Java");
+            driver.Wait.UntilElementIsVisible(SearchType.ByXpath, CommonPage.CommonSelectors.SubTitleTabsXpath(Constants.FullStackJava), 30);
             FullStackJava.Click();
         }
 
@@ -78,9 +78,9 @@ namespace CCESymp.UI.PageObjects.ServicesMenu.WebAppDev
         /// </summary>
         public bool IsFullStackJavaSubTitleDisplayed()
         {
-            Logger.Info("Check if Full Stack .Net sub title is displayed");
-            driver.Wait.UntilElementIsVisible(SearchType.ByXpath, CommonPage.CommonSelectors.SubTitleHeaderXpath, 30);
-            return driver.Element.GetElement(SearchType.ByXpath, CommonPage.CommonSelectors.SubTitleHeaderXpath).Displayed;
+            Logger.Info("Check if Full Stack Java sub title is displayed");
+            driver.Wait.UntilElementIsVisible(SearchType.ByXpath, CommonPage.CommonSelectors.SubTitleHeaderXpath(Constants.FullStackJava), 30);
+            return driver.Element.GetElement(SearchType.ByXpath, CommonPage.CommonSelectors.SubTitleHeaderXpath(Constants.FullStackJava)).Displayed;
 
         }
 

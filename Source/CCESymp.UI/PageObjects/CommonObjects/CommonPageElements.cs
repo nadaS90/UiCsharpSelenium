@@ -18,7 +18,8 @@ namespace CCESymp.UI.PageObjects.CommonObjects
 
 
         public IElement PageTitleHeader => driver.Element.GetElement(SearchType.ByXpath, CommonPage.CommonSelectors.PageTitleHeaderXpath(Constants.WebAppDevPageTitle));
-        public IElement SubTitleHeader => driver.Element.GetElement(SearchType.ByXpath, CommonSelectors.SubTitleHeaderXpath);
+        public IElement SubTitleTabs => driver.Element.GetElement(SearchType.ByXpath, CommonPage.CommonSelectors.PageTitleHeaderXpath(Constants.FullStackJava));
+        public IElement SubTitleHeader => driver.Element.GetElement(SearchType.ByXpath, CommonPage.CommonSelectors.SubTitleHeaderXpath(Constants.FullStackDotNet));
         public IElement GetStartedBtn => driver.Element.GetElement(SearchType.ByXpath, CommonSelectors.GetStartedBtnXpath);
         public IElement CardContentLink => driver.Element.GetElement(SearchType.ByXpath, CommonSelectors.CardContentLinkXpath);
         public IElement ExploreMoreBtn => driver.Element.GetElement(SearchType.ByXpath, CommonPage.CommonSelectors.ExploreMoreBtnXpath(Constants.ExploreCaseStudies));

@@ -27,7 +27,7 @@ namespace CCESymp.UI.TestData
 
         public static string WebAppDevPageTitle = "Web Application Development";
 
-        public static string FullStackDotNet = "Full Stack  .NET";
+        public static string FullStackDotNet = "Full Stack .NET";
         public static string FullStackJS = "Full Stack JavaScript";
         public static string FullStackJava = "Full Stack Java";
 
