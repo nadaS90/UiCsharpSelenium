@@ -1,6 +1,9 @@
 ﻿using CCESymp.UI.PageObjects;
+using CCESymp.UI.PageObjects.CommonObjects;
+using CCESymp.UI.TestData;
 using CCESymp.UI.Utilities;
 using NUnit.Framework;
+using static CCESymp.UI.PageObjects.CommonObjects.CommonPage;
 
 namespace CCESymp.UI.TestClasses
 {
@@ -26,9 +29,10 @@ namespace CCESymp.UI.TestClasses
             Assert.IsTrue(MainMenu.Page.IsSubMenuOptionsDisplayed(), "sub menu options dropdown is not displayed");
             Logger.Info("VALIDATION SUCCESS: sub menu options dropdown is displayed!");
             MainMenu.Page.ClickOnSubMenuOption();
-            Logger.Info("VALIDATION: user navigated to the required page that matches the selected sub menu option");
-            // add validation from H1 tittle in each page
 
+            Logger.Info("VALIDATION: Required page is loaded and page title displayed");
+            Assert.IsTrue(CommonPage.CommonSelectors.PageTitleHeaderXpath(Constants.WebAppDevPageTitle).Contains(Constants.WebAppDevPageTitle));
+            Logger.Info("VALIDATION SUCCESS: Page title displayed when user navegates to it");
         }
     }
 }

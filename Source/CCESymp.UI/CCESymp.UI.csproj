@@ -135,6 +135,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PageObjects\CommonObjects\CommonPage.cs" />
+    <Compile Include="PageObjects\CommonObjects\CommonPageElements.cs" />
+    <Compile Include="PageObjects\CommonObjects\CommonPageSelectors.cs" />
     <Compile Include="PageObjects\CustomerPage-MessageTracing.cs" />
     <Compile Include="PageObjects\CustomerPage.cs" />
     <Compile Include="PageObjects\CustomerPageElements.cs" />
@@ -148,8 +151,13 @@
     <Compile Include="PageObjects\MenuSection.cs" />
     <Compile Include="PageObjects\MenuSectionPageElements.cs" />
     <Compile Include="PageObjects\MenuSectionSelectors.cs" />
+    <Compile Include="PageObjects\ServicesMenu\WebAppDev\WebAppDevPage.cs" />
+    <Compile Include="PageObjects\ServicesMenu\WebAppDev\WebAppDevElements.cs" />
+    <Compile Include="PageObjects\ServicesMenu\WebAppDev\WebAppDevSelectors.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestClasses\TestWebAppDevTryTest.cs" />
     <Compile Include="TestClasses\MainMenuTest.cs" />
+    <Compile Include="TestClasses\WebAppDevTest.cs" />
     <Compile Include="TestData\Constants.cs" />
     <Compile Include="Utilities\HL7Sender.cs" />
     <Compile Include="Utilities\BasePage.cs" />

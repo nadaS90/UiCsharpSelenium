@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using BD.Automation.Core.Drivers;
+﻿using BD.Automation.Core.Drivers;
 using BD.Automation.Core.Drivers.Enums;
-using CCESymp.Data;
+using CCESymp.UI.TestData;
 using CCESymp.UI.Utilities;
-using Common;
+
 
 namespace CCESymp.UI.PageObjects
 {
@@ -19,7 +14,7 @@ namespace CCESymp.UI.PageObjects
         public void HoverOnMainMenu() 
         {
             Logger.Info("Hover on Main Menu Tab");
-            Utilities.MouseHoverToElement(SearchType.ByXpath, MainMenuItemXPath);
+            Utilities.MouseHoverToElement(SearchType.ByXpath, MainMenu.Selectors.MainMenuItemXpath(Constants.ServicesMAinMenu));
         }
 
         /// <summary>
@@ -29,7 +24,7 @@ namespace CCESymp.UI.PageObjects
         public bool IsSubMenuOptionsDisplayed()
         {
             Logger.Info("Check if subMenu is displayed");
-            driver.Wait.UntilElementIsVisible(SearchType.ByXpath, ShowSubMenuDropDownListXPath, 30);
+            driver.Wait.UntilElementIsVisible(SearchType.ByXpath, MainMenu.Selectors.ShowSubMenuDropdownXpath(Constants.ServicesSubMenu), 30);
             return ShowSubMenuDropDownList.Displayed;
         }
 
@@ -41,7 +36,7 @@ namespace CCESymp.UI.PageObjects
         {
             Logger.Info("Click on option displayed in the dropdown sub menu");
             //Utilities.ClickElement(SearchType.ByXpath, Selectors.SubMenuOptionXpath, 20, "Web Application Development");
-            driver.Wait.UntilElementIsVisible(SearchType.ByXpath, SubMenuDropDownOptionXPath);
+            driver.Wait.UntilElementIsVisible(SearchType.ByXpath, MainMenu.Selectors.SubMenuOptionXpath(Constants.WebAppDevelopment));
             SubMenuDropDownOption.Click();
         }
 
