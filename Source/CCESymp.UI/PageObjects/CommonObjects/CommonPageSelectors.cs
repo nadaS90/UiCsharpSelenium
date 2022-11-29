@@ -16,7 +16,9 @@ namespace CCESymp.UI.PageObjects.CommonObjects
             public static string GetStartedBtnXpath => "//*[contains(@class,'button-group')]//child::a[text()='Get Started']";
             //public static string SubTitleHeaderXpath => "//p[text()='{0}']";
             // public static string SubTitleHeaderXpath => "//div[@class='sub-title-header text-black-500']";
-            public static string SubTitleTabsXpath (string SubTitleTabs) => $"//span[text()='{SubTitleTabs}']";
+             public static string SubTitleTabsXpath (string SubTitleTabs) => $"//span[text()='{SubTitleTabs}']";
+            //public static string SubTitleTabsXpath(string SubTitleTabs) => $"//ul[contains(@class,'flex flex-row rounded')]//child::li[{SubTitleTabs}]";
+
             public static string SubTitleHeaderXpath(string pageSubTitle) => $"//p[text()='{pageSubTitle}']";
 
 

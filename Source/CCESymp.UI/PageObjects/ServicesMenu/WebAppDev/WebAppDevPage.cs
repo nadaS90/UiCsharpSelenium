@@ -43,6 +43,16 @@ namespace CCESymp.UI.PageObjects.ServicesMenu.WebAppDev
         }
 
         /// <summary>
+        /// Verify if Full Stack .Net sub title is displayed 
+        /// </summary>
+        public bool IsFullStackJSTabDisplayed()
+        {
+            Logger.Info("Check if Full Stack JS tab is displayed");
+            Utilities.ScrollToFindElement(SearchType.ByXpath, CommonPage.CommonSelectors.SubTitleTabsXpath(Constants.FullStackJS));
+            return driver.Element.GetElement(SearchType.ByXpath, CommonPage.CommonSelectors.SubTitleTabsXpath(Constants.FullStackJS)).Displayed;
+        }
+
+        /// <summary>
         /// click on Full Stack Js tab that is displayed on Web Application Development page
         /// </summary>
         public void ClickOnFullStackJSTab()

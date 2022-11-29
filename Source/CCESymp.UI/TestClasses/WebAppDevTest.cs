@@ -57,9 +57,10 @@ namespace CCESymp.UI.TestClasses
             Logger.Info("EXECUTING: Test Case 1251787: US1400003 - click on Full Stack JS tab that is displayed on Web Application Development page");
             driver.Navigation.SetUrl("https://integrant.com/services/web-application-development");
 
-           // Logger.Info("VALIDATION: Required sub title tab is displayed");
-           // Assert.IsTrue(WebAppDevPage.Page.IsFullStackJSSubTitleDisplayed());
-           // Logger.Info("VALIDATION SUCCESS: Required sub title tab is displayed");
+            // Logger.Info("VALIDATION: Required sub title tab is displayed");
+            // Assert.IsTrue(WebAppDevPage.Page.IsFullStackJSSubTitleDisplayed());
+            // Logger.Info("VALIDATION SUCCESS: Required sub title tab is displayed");
+            WebAppDevPage.Page.IsFullStackJSTabDisplayed();
             WebAppDevPage.Page.ClickOnFullStackJSTab();
             Logger.Info("VALIDATION: Required sub page is loaded and sub title displayed");
             Assert.IsTrue(CommonPage.CommonSelectors.SubTitleHeaderXpath(Constants.FullStackJS).Contains(Constants.FullStackJS));
