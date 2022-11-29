@@ -304,7 +304,7 @@ namespace CCESymp.UI.TestClasses
 
         [TestCase]
         [Category("CodeVoyanceMainMenu")]
-        [Description("Test Case 1251787:20 - User Hover on CodeVoyance main menu and select CodeVoyance option")]
+        [Description("Test Case 1251787:21 - User Click on CodeVoyance main menu and navigates to that page")]
 
         public void UserSelectCodeVoyanceOption()
         {

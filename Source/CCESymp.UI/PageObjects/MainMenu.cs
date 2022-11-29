@@ -36,7 +36,6 @@ namespace CCESymp.UI.PageObjects
         public void ClickOnSubMenuOption(string subMenuOption, IElement element)
         {
             Logger.Info("Click on option displayed in the dropdown sub menu");
-            //Utilities.ClickElement(SearchType.ByXpath, Selectors.SubMenuOptionXpath, 20, "Web Application Development");
             driver.Wait.UntilElementIsVisible(SearchType.ByXpath, MainMenu.Selectors.SubMenuOptionXpath(subMenuOption));
             element.Click();
         }
@@ -47,44 +46,9 @@ namespace CCESymp.UI.PageObjects
         public void ClickOnMainMenu(string MainMenuItem, IElement element)
         {
             Logger.Info("Click on option displayed in the dropdown sub menu");
-            //Utilities.ClickElement(SearchType.ByXpath, Selectors.SubMenuOptionXpath, 20, "Web Application Development");
             driver.Wait.UntilElementIsVisible(SearchType.ByXpath, MainMenu.Selectors.MainMenuItemXpath(MainMenuItem));
             element.Click();
         }
-
-        /*
-                /// <summary>
-                /// Clicks on Mobile App Dev option displayed on the submenu
-                /// </summary>
-                public void ClickOnMobileAppDevOption(string subMenuOption)
-                {
-                    Logger.Info("Click on Mobile App Devoption displayed in the dropdown sub menu");
-                    //Utilities.ClickElement(SearchType.ByXpath, Selectors.SubMenuOptionXpath, 20, "Web Application Development");
-                    driver.Wait.UntilElementIsVisible(SearchType.ByXpath, MainMenu.Selectors.SubMenuOptionXpath(subMenuOption));
-                    MobileAppOption.Click();
-                }
-
-                /// <summary>
-                /// Clicks on Automated Testing option displayed on the submenu
-                /// </summary>
-                public void ClickOnAutomatedTestingOption(string subMenuOption)
-                {
-                    Logger.Info("Click on Automated Testing option displayed in the dropdown sub menu");
-                    //Utilities.ClickElement(SearchType.ByXpath, Selectors.SubMenuOptionXpath, 20, "Web Application Development");
-                    driver.Wait.UntilElementIsVisible(SearchType.ByXpath, MainMenu.Selectors.SubMenuOptionXpath(subMenuOption));
-                    AutomatedTestingOption.Click();
-                }
-
-                /// <summary>
-                /// Clicks on Machine Learning option displayed on the submenu
-                /// </summary>
-                public void ClickOnMachineLearningOption(string subMenuOption)
-                {
-                    Logger.Info("Click on Machine Learning in the dropdown sub menu");
-                    //Utilities.ClickElement(SearchType.ByXpath, Selectors.SubMenuOptionXpath, 20, "Web Application Development");
-                    driver.Wait.UntilElementIsVisible(SearchType.ByXpath, MainMenu.Selectors.SubMenuOptionXpath(subMenuOption));
-                    MachineLearningOption.Click();
-                }*/
 
     }
 }

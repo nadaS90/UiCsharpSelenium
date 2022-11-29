@@ -194,25 +194,5 @@ namespace CCESymp.UI.Utilities
             }
         }
 
-        /// <summary>
-        /// Validate if links are clickable
-        /// </summary>
-
-        public void ClickOnElement(SearchType type, string selector)
-        {
-            Logger.Info("Click on specific element '" + selector);
-            var element = driver.Element.GetElement(type, selector);
-
-            try
-            {
-                element.Click();
-            }
-            catch (Exception e)
-            {
-                Logger.Info($" Unable to click on specific element '{selector}' \n Error: " + e.Message);
-                throw new Exception("Error Message: " + e.Message);
-            }
-        }
-
     }
 }
