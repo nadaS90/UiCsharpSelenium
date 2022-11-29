@@ -301,6 +301,22 @@ namespace CCESymp.UI.TestClasses
             Assert.IsTrue(isSelectDone && CommonPage.CommonSelectors.PageTitleHeaderXpath(Constants.FinancewAndBankingPageTitle).Contains(Constants.FinancewAndBankingPageTitle));
             Logger.Info("VALIDATION SUCCESS: Page title displayed when user navegates to it");
         }
+
+        [TestCase]
+        [Category("CodeVoyanceMainMenu")]
+        [Description("Test Case 1251787:20 - User Hover on CodeVoyance main menu and select CodeVoyance option")]
+
+        public void UserSelectCodeVoyanceOption()
+        {
+            Logger.Info("VALIDATION: click on main menu and navigated to the required page");
+            bool isClickDone = sharedSteps.ClickOnMainMenuItem(Constants.CodeVoyanceMainMenu);
+            Logger.Info("VALIDATION SUCCESS: navigated to the required page");
+            Logger.Info("VALIDATION: Required page is loaded and page title displayed");
+            Assert.IsTrue(isClickDone && CommonPage.CommonSelectors.PageTitleHeaderXpath(Constants.CodeVoyancePageTitle).Contains(Constants.CodeVoyancePageTitle));
+            Logger.Info("VALIDATION SUCCESS: Page title displayed when user navegates to it");
+            
+
+        }
     }
 }
 

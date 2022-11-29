@@ -52,6 +52,9 @@ namespace CCESymp.UI.TestData
         public static string Manufactoring = "/industries/manufacturing";
         public static string FinancewAndBanking = "/industries/financial";
 
+        public static string CodeVoyance = "/codevoyance";
+
+
         public static string TeamRolesPageTitle = "Team Roles";
         public static string AgilePageTitle = "Agile Transformation";
         public static string HoursAndTravelPageTitle = "Team Hours and Travel";
@@ -73,6 +76,8 @@ namespace CCESymp.UI.TestData
         public static string LifeSciencesPageTitle = "Life Sciences Software Development";
         public static string ManufactoringPageTitle = "Manufacturing Software Development";
         public static string FinancewAndBankingPageTitle = "Financial & Banking Software Development";
+        
+        public static string CodeVoyancePageTitle = "CodeVoyance";
 
         public static string FullStackDotNet = "1";
         public static string FullStackJS = "Full Stack JavaScript";
