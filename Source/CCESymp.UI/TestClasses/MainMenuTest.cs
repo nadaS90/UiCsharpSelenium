@@ -248,7 +248,7 @@ namespace CCESymp.UI.TestClasses
 
         [TestCase]
         [Category("AboutMainMenu")]
-        [Description("Test Case 1251787: US1400016 - User Hover on About main menu and select Blog option")]
+        [Description("Test Case 1251787: US1400017 - User Hover on About main menu and select Blog option")]
 
         public void UserSelectBlogOption()
         {
@@ -257,6 +257,48 @@ namespace CCESymp.UI.TestClasses
             Logger.Info("VALIDATION SUCCESS: option from the sub menu displayed and selected");
             Logger.Info("VALIDATION: Required page is loaded and page title displayed");
             Assert.IsTrue(isSelectDone && CommonPage.CommonSelectors.PageTitleHeaderXpath(Constants.BlogSubTitle).Contains(Constants.BlogSubTitle));
+            Logger.Info("VALIDATION SUCCESS: Page title displayed when user navegates to it");
+        }
+
+        [TestCase]
+        [Category("IndustriesMainMenu")]
+        [Description("Test Case 1251787: US1400018 - User Hover on Industries main menu and select Life Sciences option")]
+
+        public void UserSelectLifeSciencesOption()
+        {
+            Logger.Info("VALIDATION: Hover on main menu and select an option from the sub menu displayed");
+            bool isSelectDone = sharedSteps.SelectOptionFromMainMenuItem(Constants.IndustriesMainMenu, Constants.IndustriesSubMenu, Constants.LifeSciences);
+            Logger.Info("VALIDATION SUCCESS: option from the sub menu displayed and selected");
+            Logger.Info("VALIDATION: Required page is loaded and page title displayed");
+            Assert.IsTrue(isSelectDone && CommonPage.CommonSelectors.PageTitleHeaderXpath(Constants.LifeSciencesPageTitle).Contains(Constants.LifeSciencesPageTitle));
+            Logger.Info("VALIDATION SUCCESS: Page title displayed when user navegates to it");
+        }
+
+        [TestCase]
+        [Category("IndustriesMainMenu")]
+        [Description("Test Case 1251787: US1400019 - User Hover on Industries main menu and select Manufactoring option")]
+
+        public void UserSelectManufactoringOption()
+        {
+            Logger.Info("VALIDATION: Hover on main menu and select an option from the sub menu displayed");
+            bool isSelectDone = sharedSteps.SelectOptionFromMainMenuItem(Constants.IndustriesMainMenu, Constants.IndustriesSubMenu, Constants.Manufactoring);
+            Logger.Info("VALIDATION SUCCESS: option from the sub menu displayed and selected");
+            Logger.Info("VALIDATION: Required page is loaded and page title displayed");
+            Assert.IsTrue(isSelectDone && CommonPage.CommonSelectors.PageTitleHeaderXpath(Constants.ManufactoringPageTitle).Contains(Constants.ManufactoringPageTitle));
+            Logger.Info("VALIDATION SUCCESS: Page title displayed when user navegates to it");
+        }
+
+        [TestCase]
+        [Category("IndustriesMainMenu")]
+        [Description("Test Case 1251787:20 - User Hover on Industries main menu and select Finance & Banking option")]
+
+        public void UserSelectFinanceAndBankingOption()
+        {
+            Logger.Info("VALIDATION: Hover on main menu and select an option from the sub menu displayed");
+            bool isSelectDone = sharedSteps.SelectOptionFromMainMenuItem(Constants.IndustriesMainMenu, Constants.IndustriesSubMenu, Constants.FinancewAndBanking);
+            Logger.Info("VALIDATION SUCCESS: option from the sub menu displayed and selected");
+            Logger.Info("VALIDATION: Required page is loaded and page title displayed");
+            Assert.IsTrue(isSelectDone && CommonPage.CommonSelectors.PageTitleHeaderXpath(Constants.FinancewAndBankingPageTitle).Contains(Constants.FinancewAndBankingPageTitle));
             Logger.Info("VALIDATION SUCCESS: Page title displayed when user navegates to it");
         }
     }

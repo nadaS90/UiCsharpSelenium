@@ -43,13 +43,14 @@ namespace CCESymp.UI.TestData
         public static string Technologies = "/technologies";
         public static string Blog = "/blog";
 
-
-
-
         public static string WebAppDevelopment = "/services/web-application-development";
         public static string MobileAppDevelopmen = "/services/mobile-application-development";
         public static string AutomatedTestingServices = "/services/automated-testing";
         public static string MachineLearningDevelopment = "/services/ai-ml-development";
+
+        public static string LifeSciences = "/industries/life-sciences";
+        public static string Manufactoring = "/industries/manufacturing";
+        public static string FinancewAndBanking = "/industries/financial";
 
         public static string TeamRolesPageTitle = "Team Roles";
         public static string AgilePageTitle = "Agile Transformation";
@@ -69,6 +70,9 @@ namespace CCESymp.UI.TestData
         public static string AutomatedTestingPageTitle = "QA and Automated Testing Services";
         public static string MachineLearningPageTitle = "AI & ML Development";
 
+        public static string LifeSciencesPageTitle = "Life Sciences Software Development";
+        public static string ManufactoringPageTitle = "Manufacturing Software Development";
+        public static string FinancewAndBankingPageTitle = "Financial & Banking Software Development";
 
         public static string FullStackDotNet = "1";
         public static string FullStackJS = "Full Stack JavaScript";
