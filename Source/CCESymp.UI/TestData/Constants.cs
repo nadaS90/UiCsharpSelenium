@@ -36,6 +36,12 @@ namespace CCESymp.UI.TestData
         public static string Security = "/get-started/security";
         public static string CaseStudies = "/case-studies";
 
+        public static string Vision = "about/vision-mission-values/";
+        public static string Location = "about/locations";
+        public static string LeaderShip = "about/leadership-team";
+        public static string Careers = "/careers";
+        public static string Technologies = "/technologies";
+        public static string Blog = "/blog";
 
 
 
@@ -52,6 +58,12 @@ namespace CCESymp.UI.TestData
         public static string NoticePeriodPageTitle = "Extended Notice Program";
         public static string SecurityPeriodPageTitle = "Security";
 
+        public static string VisionPageTitle = "Vision";
+        public static string LocationPageTitle = "Locations";
+        public static string LeaderShipPageTitle = "Leadership Team";
+        public static string CareersPageTitle = "Join Our Team";
+        public static string TechnologiesPageTitle = "Technologies";
+
         public static string WebAppDevPageTitle = "Web Application Development";
         public static string MobileAppDevPageTitle = "Mobile Application Development";
         public static string AutomatedTestingPageTitle = "QA and Automated Testing Services";
@@ -63,6 +75,8 @@ namespace CCESymp.UI.TestData
         public static string FullStackJava = "3";
 
         public static string TopCasesTudiesSubTitle = "Top Case Studies";
+        public static string BlogSubTitle = "Most popular of this month";
+
 
         public static string HealthTechCard = "Health Tech Company";
         public static string RemoteRobotAppCard = "Remote Robot App";

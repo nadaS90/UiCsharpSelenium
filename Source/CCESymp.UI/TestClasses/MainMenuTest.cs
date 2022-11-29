@@ -23,7 +23,7 @@ namespace CCESymp.UI.TestClasses
        
 
         [TestCase]
-        [Category("MainMenu")]
+        [Category("ServicesMainMenu")]
         [Description("Test Case 1251787: US1400001 - User Hover on Services main menu and select Web Application Development option")]
 
         public void UserSelectWebAppDevOption()
@@ -37,7 +37,7 @@ namespace CCESymp.UI.TestClasses
         }
 
         [TestCase]
-        [Category("MainMenu")]
+        [Category("ServicesMainMenu")]
         [Description("Test Case 1251787: US1400002 - User Hover on Services main menu and select Mobile Application Development option")]
 
         public void UserSelectMobileAppDevOption()
@@ -51,7 +51,7 @@ namespace CCESymp.UI.TestClasses
         }
 
         [TestCase]
-        [Category("MainMenu")]
+        [Category("ServicesMainMenu")]
         [Description("Test Case 1251787: US1400003 - User Hover on Services main menu and select Automated Testing Services option")]
 
         public void UserSelectAutomatedTestingServicesOption()
@@ -65,7 +65,7 @@ namespace CCESymp.UI.TestClasses
         }
 
         [TestCase]
-        [Category("MainMenu")]
+        [Category("ServicesMainMenu")]
         [Description("Test Case 1251787: US1400004 - User Hover on Services main menu and select Machine Learning Development option")]
 
         public void UserSelectMachineLearningDevelopmentOption()
@@ -79,7 +79,7 @@ namespace CCESymp.UI.TestClasses
         }
 
         [TestCase]
-        [Category("MainMenu")]
+        [Category("GetStartedMainMenu")]
         [Description("Test Case 1251787: US1400005 - User Hover on Get Started main menu and select Team Roles option")]
 
         public void UserSelectTeamRolesOption()
@@ -93,7 +93,7 @@ namespace CCESymp.UI.TestClasses
         }
 
         [TestCase]
-        [Category("MainMenu")]
+        [Category("GetStartedMainMenu")]
         [Description("Test Case 1251787: US1400006 - User Hover on Get Started main menu and select Agile Transformation option")]
 
         public void UserSelectAgileTransformationOption()
@@ -107,7 +107,7 @@ namespace CCESymp.UI.TestClasses
         }
 
         [TestCase]
-        [Category("MainMenu")]
+        [Category("GetStartedMainMenu")]
         [Description("Test Case 1251787: US1400007 - User Hover on Get Started main menu and select Hours And Travel option")]
 
         public void UserSelectHoursAndTravelOption()
@@ -121,7 +121,7 @@ namespace CCESymp.UI.TestClasses
         }
 
         [TestCase]
-        [Category("MainMenu")]
+        [Category("GetStartedMainMenu")]
         [Description("Test Case 1251787: US1400008 - User Hover on Get Started main menu and select 4Plus1 program option")]
 
         public void UserSelectPlusProgramOption()
@@ -135,7 +135,7 @@ namespace CCESymp.UI.TestClasses
         }
 
         [TestCase]
-        [Category("MainMenu")]
+        [Category("GetStartedMainMenu")]
         [Description("Test Case 1251787: US1400009 - User Hover on Get Started main menu and select Notice Period option")]
 
         public void UserSelectNoticePeriodOption()
@@ -149,7 +149,7 @@ namespace CCESymp.UI.TestClasses
         }
 
         [TestCase]
-        [Category("MainMenu")]
+        [Category("GetStartedMainMenu")]
         [Description("Test Case 1251787: US1400010 - User Hover on Get Started main menu and select Security option")]
 
         public void UserSelectSecurityOption()
@@ -163,7 +163,7 @@ namespace CCESymp.UI.TestClasses
         }
 
         [TestCase]
-        [Category("MainMenu")]
+        [Category("GetStartedMainMenu")]
         [Description("Test Case 1251787: US1400011 - User Hover on Get Started main menu and select Case Studies option")]
 
         public void UserSelectCaseStudiesOption()
@@ -175,6 +175,91 @@ namespace CCESymp.UI.TestClasses
             Assert.IsTrue(isSelectDone && CommonPage.CommonSelectors.PageTitleHeaderXpath(Constants.TopCasesTudiesSubTitle).Contains(Constants.TopCasesTudiesSubTitle));
             Logger.Info("VALIDATION SUCCESS: Page title displayed when user navegates to it");
         }
+
+        [TestCase]
+        [Category("AboutMainMenu")]
+        [Description("Test Case 1251787: US1400012 - User Hover on About main menu and select Vision option")]
+
+        public void UserSelectVissionOption()
+        {
+            Logger.Info("VALIDATION: Hover on main menu and select an option from the sub menu displayed");
+            bool isSelectDone = sharedSteps.SelectOptionFromMainMenuItem(Constants.AboutMainMenu, Constants.AboutSubMenu, Constants.Vision);
+            Logger.Info("VALIDATION SUCCESS: option from the sub menu displayed and selected");
+            Logger.Info("VALIDATION: Required page is loaded and page title displayed");
+            Assert.IsTrue(isSelectDone && CommonPage.CommonSelectors.PageTitleHeaderXpath(Constants.VisionPageTitle).Contains(Constants.VisionPageTitle));
+            Logger.Info("VALIDATION SUCCESS: Page title displayed when user navegates to it");
+        }
+
+        [TestCase]
+        [Category("AboutMainMenu")]
+        [Description("Test Case 1251787: US1400013 - User Hover on About main menu and select Location option")]
+
+        public void UserSelectLocationOption()
+        {
+            Logger.Info("VALIDATION: Hover on main menu and select an option from the sub menu displayed");
+            bool isSelectDone = sharedSteps.SelectOptionFromMainMenuItem(Constants.AboutMainMenu, Constants.AboutSubMenu, Constants.Location);
+            Logger.Info("VALIDATION SUCCESS: option from the sub menu displayed and selected");
+            Logger.Info("VALIDATION: Required page is loaded and page title displayed");
+            Assert.IsTrue(isSelectDone && CommonPage.CommonSelectors.PageTitleHeaderXpath(Constants.LocationPageTitle).Contains(Constants.LocationPageTitle));
+            Logger.Info("VALIDATION SUCCESS: Page title displayed when user navegates to it");
+        }
+
+        [TestCase]
+        [Category("AboutMainMenu")]
+        [Description("Test Case 1251787: US1400014 - User Hover on About main menu and select LeaderShip option")]
+
+        public void UserSelectLeaderShipOption()
+        {
+            Logger.Info("VALIDATION: Hover on main menu and select an option from the sub menu displayed");
+            bool isSelectDone = sharedSteps.SelectOptionFromMainMenuItem(Constants.AboutMainMenu, Constants.AboutSubMenu, Constants.LeaderShip);
+            Logger.Info("VALIDATION SUCCESS: option from the sub menu displayed and selected");
+            Logger.Info("VALIDATION: Required page is loaded and page title displayed");
+            Assert.IsTrue(isSelectDone && CommonPage.CommonSelectors.PageTitleHeaderXpath(Constants.LeaderShipPageTitle).Contains(Constants.LeaderShipPageTitle));
+            Logger.Info("VALIDATION SUCCESS: Page title displayed when user navegates to it");
+        }
+
+        [TestCase]
+        [Category("AboutMainMenu")]
+        [Description("Test Case 1251787: US1400015 - User Hover on About main menu and select Careers option")]
+
+        public void UserSelectCareersOption()
+        {
+            Logger.Info("VALIDATION: Hover on main menu and select an option from the sub menu displayed");
+            bool isSelectDone = sharedSteps.SelectOptionFromMainMenuItem(Constants.AboutMainMenu, Constants.AboutSubMenu, Constants.Careers);
+            Logger.Info("VALIDATION SUCCESS: option from the sub menu displayed and selected");
+            Logger.Info("VALIDATION: Required page is loaded and page title displayed");
+            Assert.IsTrue(isSelectDone && CommonPage.CommonSelectors.PageTitleHeaderXpath(Constants.CareersPageTitle).Contains(Constants.CareersPageTitle));
+            Logger.Info("VALIDATION SUCCESS: Page title displayed when user navegates to it");
+        }
+
+        [TestCase]
+        [Category("AboutMainMenu")]
+        [Description("Test Case 1251787: US1400016 - User Hover on About main menu and select Technologies option")]
+
+        public void UserSelectTechnologiesOption()
+        {
+            Logger.Info("VALIDATION: Hover on main menu and select an option from the sub menu displayed");
+            bool isSelectDone = sharedSteps.SelectOptionFromMainMenuItem(Constants.AboutMainMenu, Constants.AboutSubMenu, Constants.Technologies);
+            Logger.Info("VALIDATION SUCCESS: option from the sub menu displayed and selected");
+            Logger.Info("VALIDATION: Required page is loaded and page title displayed");
+            Assert.IsTrue(isSelectDone && CommonPage.CommonSelectors.PageTitleHeaderXpath(Constants.TechnologiesPageTitle).Contains(Constants.TechnologiesPageTitle));
+            Logger.Info("VALIDATION SUCCESS: Page title displayed when user navegates to it");
+        }
+
+        [TestCase]
+        [Category("AboutMainMenu")]
+        [Description("Test Case 1251787: US1400016 - User Hover on About main menu and select Blog option")]
+
+        public void UserSelectBlogOption()
+        {
+            Logger.Info("VALIDATION: Hover on main menu and select an option from the sub menu displayed");
+            bool isSelectDone = sharedSteps.SelectOptionFromMainMenuItem(Constants.AboutMainMenu, Constants.AboutSubMenu, Constants.Blog);
+            Logger.Info("VALIDATION SUCCESS: option from the sub menu displayed and selected");
+            Logger.Info("VALIDATION: Required page is loaded and page title displayed");
+            Assert.IsTrue(isSelectDone && CommonPage.CommonSelectors.PageTitleHeaderXpath(Constants.BlogSubTitle).Contains(Constants.BlogSubTitle));
+            Logger.Info("VALIDATION SUCCESS: Page title displayed when user navegates to it");
+        }
     }
 }
+
 
