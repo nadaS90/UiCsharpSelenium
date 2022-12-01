@@ -2,7 +2,8 @@
 using BD.Automation.Core.Drivers.Enums;
 using System;
 using OpenQA.Selenium.Interactions;
-
+using OpenQA.Selenium;
+using BD.Automation.Core.Drivers.Models;
 namespace CCESymp.UI.Utilities
 {
     public class Wrappers : BaseDriver 
@@ -176,5 +177,22 @@ namespace CCESymp.UI.Utilities
             else
                 return "-1";
         }
+
+        public void ScrollToFindElement(SearchType type, string selector)
+        {
+            Logger.Info("Scroll to specific element '" + selector);
+
+            try
+            {
+                var element = driver.Element.GetElement(type, selector);
+                element.SendKeys(Keys.PageDown);
+            }
+            catch (Exception e)
+            {
+                Logger.Info($" Unable to Scroll to specific element '{selector}' \n Error: " + e.Message);
+                throw new Exception("Error Message: " + e.Message);
+            }
+        }
+
     }
 }

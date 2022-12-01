@@ -1,4 +1,5 @@
-﻿namespace CCESymp.UI.Utilities
+﻿using OpenQA.Selenium.Interactions;
+namespace CCESymp.UI.Utilities
 {
     public class BasePage<TypeOfPage> : BaseDriver where TypeOfPage : new()
     {
@@ -28,9 +29,8 @@
         public void RefreshPage()
         {
             driver.Navigation.Refresh();
-        }  
-        
+        }
 
-        
+
     }
 }
