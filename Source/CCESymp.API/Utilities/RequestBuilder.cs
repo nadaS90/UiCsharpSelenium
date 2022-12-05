@@ -21,7 +21,7 @@ namespace CCESymp.API
             var urlData = url;
             if (string.IsNullOrEmpty(urlData))
             {
-                urlData = Common.Common.CCESymp_DashboardAPI_Url;
+                urlData = Common.Common.CCESymp_Postman_Echo_Url;
             }
             return urlData;
         }

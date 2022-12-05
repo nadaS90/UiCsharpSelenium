@@ -90,6 +90,7 @@
     <Compile Include="Mapping\IDMMapping\UserInfo.cs" />
     <Compile Include="Mapping\IDMMapping\UserDetails.cs" />
     <Compile Include="Mapping\IDMMapping\UserExistence.cs" />
+    <Compile Include="Mapping\IMSMapping\GetPostmanEchoResponse.cs" />
     <Compile Include="Mapping\IMSMapping\HL7Mapping.cs" />
     <Compile Include="Mapping\IMSMapping\MedMapping.cs">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

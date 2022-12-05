@@ -108,8 +108,8 @@ namespace CCESymp.API.Services
         public async Task<bool> CheckCustomerExistsAsync (string accessToken, string RSSId)
         {
             HttpClient _httpClientFactory = new();
-            string BaseAddress = (string.Concat(Common.Common.CCESymp_DashboardAPI_Url, $"api/customer/checkCustomerExist/{RSSId}"));
-            _httpClientFactory.BaseAddress = new Uri(BaseAddress);
+          //  string BaseAddress = (string.Concat(Common.Common.CCESymp_DashboardAPI_Url, $"api/customer/checkCustomerExist/{RSSId}"));
+           // _httpClientFactory.BaseAddress = new Uri(BaseAddress);
             _httpClientFactory.DefaultRequestHeaders.Add("Authorization", $"Bearer {accessToken}");
 
             HttpResponseMessage Response = await _httpClientFactory.GetAsync(_httpClientFactory.BaseAddress);

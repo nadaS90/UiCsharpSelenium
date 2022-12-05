@@ -1,5 +1,4 @@
-﻿
-using CCESymp.Data.Mapping;
+﻿using CCESymp.Data.Mapping;
 using CCESymp.IDMServices.Services;
 using NUnit.Framework;
 using RestSharp.Serialization.Json;
@@ -9,6 +8,7 @@ namespace CCESymp.API.Tests
     [TestFixture]
     public class AuthorizationTest : TestBase
     {
+      
         [Test, Category("HomePage")]
         [Description("Test Case 1214353: US1198508 - API - GetLoggedInUserDetails")]
         public void GetLoggedInUserDetails()

@@ -35,7 +35,7 @@ namespace Common
 
 
         public static string CCESymp_DashboardUI_Url = GetEnvVar(@"CCESymp_DashboardUI_Url", @"https://hsce-dashboard-tst.bdx-cloud.com/");        
-        public static string CCESymp_DashboardAPI_Url = GetEnvVar(@"CCESymp_DashboardAPI_Url", @"https://hsce-dashboard-api-tst.bdx-cloud.com/");
+        public static string CCESymp_Postman_Echo_Url = GetEnvVar(@"CCESymp_Postman_Echo_Url", @"https://postman-echo.com");
         /*Temp Environments*/
 
         //Test Usernames

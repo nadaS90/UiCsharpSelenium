@@ -104,7 +104,7 @@ namespace CCESymp.API
             {
                 throw (e);
             }
-            //  driver.Quit();
+              _webDriver.Quit();
         }
         public void GenerateTokens()
         {
@@ -123,14 +123,14 @@ namespace CCESymp.API
             {
                 DataRepository.DeleteUserSessions();
                 ChromeOptions options = new ChromeOptions();
-                options.AddArgument("--headless");
+               // options.AddArgument("--headless");
                 _webDriver = new Driver(WebDriverType.Chrome, LoggerType.Log4Net, WindowSize.Maximize, options);
-                NavigateToCCESymphonyURL();
-                Login(Common.Common.HSCEAutoAdminUser, Common.Common.HSCEAutomationPassword);
-                var token = _webDriver.Browser.ExecuteScript("return sessionStorage.getItem('access_token')");
-                Common.Common.AdminAPIAccessToken = Common.Common.GetEnvVar(@"AdminAPIAccessToken", token.ToString());
-                sessionId = _webDriver.Browser.ExecuteScript("return sessionStorage.getItem('session_uuid')").ToString();
-                _webDriver.Quit();
+                NavigateToCCESPostmanEchoURL();
+                //Login(Common.Common.HSCEAutoAdminUser, Common.Common.HSCEAutomationPassword);
+                //var token = _webDriver.Browser.ExecuteScript("return sessionStorage.getItem('access_token')");
+                //Common.Common.AdminAPIAccessToken = Common.Common.GetEnvVar(@"AdminAPIAccessToken", token.ToString());
+                //sessionId = _webDriver.Browser.ExecuteScript("return sessionStorage.getItem('session_uuid')").ToString();
+                //_webDriver.Quit();
                 //dataRepo.DeleteUserSessions();
             }
         }
@@ -139,14 +139,14 @@ namespace CCESymp.API
             {
                 DataRepository.DeleteUserSessions();
                 ChromeOptions options = new ChromeOptions();
-                options.AddArgument("--headless");
+               // options.AddArgument("--headless");
                 _webDriver = new Driver(WebDriverType.Chrome, LoggerType.Log4Net, WindowSize.Maximize, options);
-                NavigateToCCESymphonyURL();
-                Login(Common.Common.HSCEUser, Common.Common.HSCEAutomationPassword);
-                var token = _webDriver.Browser.ExecuteScript("return sessionStorage.getItem('access_token')");
-                Common.Common.UserAPIAccessToken = Common.Common.GetEnvVar(@"UserAPIAccessToken", token.ToString());
-                sessionId = _webDriver.Browser.ExecuteScript("return sessionStorage.getItem('session_uuid')").ToString();
-                //dataRepo.DeleteUserSessions();
+                NavigateToCCESPostmanEchoURL();
+                //Login(Common.Common.HSCEUser, Common.Common.HSCEAutomationPassword);
+                //var token = _webDriver.Browser.ExecuteScript("return sessionStorage.getItem('access_token')");
+                //Common.Common.UserAPIAccessToken = Common.Common.GetEnvVar(@"UserAPIAccessToken", token.ToString());
+                //sessionId = _webDriver.Browser.ExecuteScript("return sessionStorage.getItem('session_uuid')").ToString();
+                ////dataRepo.DeleteUserSessions();
                 _webDriver.Quit();
             }
         }
@@ -157,6 +157,13 @@ namespace CCESymp.API
             Logger.Info("Trying to locate email input field on the CCE Symphony login screen");
             _webDriver.Wait.UntilElementExists(SearchType.ByXpath, Common.Common.EmailInputXpath, 60);
         }
+
+        public void NavigateToCCESPostmanEchoURL()
+        {
+            Logger.Info("Attempting to navigate to postman-echo URL");
+            _webDriver.Navigation.SetUrl($"{Common.Common.CCESymp_Postman_Echo_Url}/get");
+        }
+
         /// <summary>
         /// Checks the login page is displayed by verifying the user email field exists
         /// </summary>
