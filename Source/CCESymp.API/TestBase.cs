@@ -6,10 +6,12 @@ using BD.Automation.Core.Drivers.Models;
 using BD.Automation.Core.Drivers.Selenium;
 using CCESymp.API.Validation;
 using CCESymp.Data;
+using CCESymp.Data.Mapping;
 using CCESymp.IDMServices.Services;
 using NUnit.Framework;
 using NUnit.Framework.Interfaces;
 using OpenQA.Selenium.Chrome;
+using RestSharp;
 using System;
 using System.IO;
 
@@ -17,7 +19,7 @@ namespace CCESymp.API
 {
     public class TestBase
     {
-
+        public RestClient client;
         protected IDriver _webDriver;
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Style", "IDE1006:Naming Styles", Justification = "<OutputAnalisis>")]
@@ -41,9 +43,12 @@ namespace CCESymp.API
         [OneTimeSetUp]
         public void BeforeClass()
         {
-            IDMUserCreationService.IDMUserCreationScript();
-            GenerateTokens();
-            log4net.Config.XmlConfigurator.Configure();
+            //IDMUserCreationService.IDMUserCreationScript();
+            //GenerateTokens();
+            //log4net.Config.XmlConfigurator.Configure();
+            ConfigProvider.LoadConfiguration();
+
+
         }
 
 
@@ -104,7 +109,7 @@ namespace CCESymp.API
             {
                 throw (e);
             }
-              _webDriver.Quit();
+            // _webDriver.Quit();
         }
         public void GenerateTokens()
         {
@@ -123,7 +128,7 @@ namespace CCESymp.API
             {
                 DataRepository.DeleteUserSessions();
                 ChromeOptions options = new ChromeOptions();
-               // options.AddArgument("--headless");
+                // options.AddArgument("--headless");
                 _webDriver = new Driver(WebDriverType.Chrome, LoggerType.Log4Net, WindowSize.Maximize, options);
                 NavigateToCCESPostmanEchoURL();
                 //Login(Common.Common.HSCEAutoAdminUser, Common.Common.HSCEAutomationPassword);
@@ -134,12 +139,13 @@ namespace CCESymp.API
                 //dataRepo.DeleteUserSessions();
             }
         }
-        private void NonAdminToken() {
-           if(Common.Common.UserAPIAccessToken.Length < 6) 
+        private void NonAdminToken()
+        {
+            if (Common.Common.UserAPIAccessToken.Length < 6)
             {
                 DataRepository.DeleteUserSessions();
                 ChromeOptions options = new ChromeOptions();
-               // options.AddArgument("--headless");
+                // options.AddArgument("--headless");
                 _webDriver = new Driver(WebDriverType.Chrome, LoggerType.Log4Net, WindowSize.Maximize, options);
                 NavigateToCCESPostmanEchoURL();
                 //Login(Common.Common.HSCEUser, Common.Common.HSCEAutomationPassword);
@@ -248,5 +254,6 @@ namespace CCESymp.API
         public IElement NavigationBar => _webDriver.Element.GetElement(SearchType.ByXpath, Common.Common.NavigationBarXpath);
     }
 }
+
 
 

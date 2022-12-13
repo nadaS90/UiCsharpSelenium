@@ -16,6 +16,7 @@ namespace CCESymp.API.Tests
         public void GetDataFromPostmanEcho()
         {
             Logger.Info("EXECUTING: Test Case 1214353: US1198508 - API - GetDataFromPostmanEcho");
+           // be in before class 
             var RequestBuilder = new RequestBuilder(_webDriver);
             var response = RequestBuilder.GetResponse("get", RestSharp.Method.GET);
             //Verify Status Code
@@ -25,6 +26,10 @@ namespace CCESymp.API.Tests
             Logger.Info($"VALIDATION SUCCESS: Return status code is {Expectedcode}");
 
             //API Result
+            // must to know the sape of 
+            // create class get echo responce w hwa el.type elly natg mn el. desr bta3 el,responce da 
+
+          
             var deserialize = new JsonDeserializer();
             var apiResult = deserialize.Deserialize<GetPostmanEchoResponse>(response);
 

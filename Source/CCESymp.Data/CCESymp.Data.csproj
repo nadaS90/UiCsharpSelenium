@@ -107,6 +107,10 @@
     <Compile Include="Mapping\CCESymphonyCustomer.cs" />
     <Compile Include="Mapping\CustomerModel.cs" />
     <Compile Include="Mapping\FacilityModel.cs" />
+    <Compile Include="Dto\PetDto.cs" />
+    <Compile Include="Dto\PetCategoryDto.cs" />
+    <Compile Include="Dto\PetResponseDto.cs" />
+    <Compile Include="Dto\TagDto.cs" />
     <Compile Include="Mapping\PublishModel.cs">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
